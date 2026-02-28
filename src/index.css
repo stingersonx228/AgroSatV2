@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fira+Code:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  --color-cream: #FDF8F0;
+  --color-gold: #E6A817;
+  --color-green-leaf: #4A8C52;
+  --color-amber-warn: #C8952A;
+  --color-terra: #C4622D;
+  --color-brown-text: #2C1F0E;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F5EFE6;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-brown-text);
+  font-family: var(--font-sans);
+}
+
+/* Leaflet Map Customization */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: var(--color-surface-muted);
+}
